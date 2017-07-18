@@ -1,0 +1,41 @@
+.Nav {
+   display: flex;
+   justify-content: space-between;
+   height: 50px;
+   background: #222;
+   color: #ccc
+}
+.Nav-header {
+   display: flex;
+   align-items: center;
+}
+.Nav-logo {
+   height: 50px;
+   width: 50px;
+   background: url('./logo.svg') no-repeat center center / contain;
+   animation: 10s spin linear infinite;
+}
+.Nav-navlist {
+   display: flex;
+   list-style: none;
+   margin-right: 1em;
+}
+.Nav-navlist li {
+   margin-left: 1em;
+}
+.Nav-navlist li a {
+   text-decoration: none;
+   color: #ccc;
+}
+
+@keyframes spin {
+   0% {
+      transform: scaleX(0);
+   }
+   50% {
+      transform: rotate(180deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
